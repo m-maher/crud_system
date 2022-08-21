@@ -10,6 +10,11 @@ const routes = [
     component: Login,
   },
   {
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+  {
     path: "/Home",
     name: "Home",
     component: Home,
@@ -17,7 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.VUE_APP_URL),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 
